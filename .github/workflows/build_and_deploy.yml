@@ -23,7 +23,10 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-
+      
+    - name: Install Firebase CLI
+      run: npm install -g firebase-tools
+      
     - name: List node_modules
       run: ls -la node_modules/react-scripts
 
