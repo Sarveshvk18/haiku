@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/haiku/static/css/main.ac523c1b.css",
+    "main.js": "/haiku/static/js/main.822088be.js",
+    "static/js/453.84735f90.chunk.js": "/haiku/static/js/453.84735f90.chunk.js",
+    "index.html": "/haiku/index.html",
+    "main.ac523c1b.css.map": "/haiku/static/css/main.ac523c1b.css.map",
+    "main.822088be.js.map": "/haiku/static/js/main.822088be.js.map",
+    "453.84735f90.chunk.js.map": "/haiku/static/js/453.84735f90.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac523c1b.css",
+    "static/js/main.822088be.js"
+  ]
+}
