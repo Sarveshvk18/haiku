@@ -24,6 +24,11 @@ jobs:
     - name: Install dependencies
       run: npm install
       
+    - name: Verify react-scripts Installation
+      run: |
+        echo "Listing node_modules"
+        ls -la node_modules/react-scripts
+        
     - name: Install Firebase CLI
       run: npm install -g firebase-tools
       
