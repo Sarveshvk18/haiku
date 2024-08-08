@@ -16,10 +16,16 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '20'  # Specify the version of Node.js you want to use
+        node-version: '20'  # Ensure this is the version you need
+
+    - name: Show package.json
+      run: cat package.json
 
     - name: Install dependencies
-      run: npm install  # Install all dependencies, including react-scripts
+      run: npm install
+
+    - name: List node_modules
+      run: ls -la node_modules/react-scripts
 
     - name: Build the project
       run: npm run build
@@ -29,5 +35,14 @@ jobs:
       
     - name: Build the project
       run: CI=false npm run build
+
+    - name: Cache node_modules
+      uses: actions/cache@v3
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
 
 
