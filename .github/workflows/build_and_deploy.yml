@@ -11,15 +11,15 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4  # Updated to the latest version
+      uses: actions/checkout@v4
 
     - name: Set up Node.js
-      uses: actions/setup-node@v4  # Updated to the latest version
+      uses: actions/setup-node@v4
       with:
-        node-version: '20'  # You can set this to '16' or '20' as per your project requirements
+        node-version: '20'  # Specify the version of Node.js you want to use
 
     - name: Install dependencies
-      run: npm install
+      run: npm install  # Install all dependencies, including react-scripts
 
     - name: Build the project
       run: npm run build
