@@ -7,7 +7,7 @@ import './App.css';
 
 const App = () => {
     const [user, setUser] = useState(null);
-    const [message, setMessage] = useState('');
+    const [message, setMessage] = useState(''); 
     const [messages, setMessages] = useState([]);
     const dummy = useRef();
 
