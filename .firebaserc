@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "chat-66ca8"
+  },
+  "targets": {
+    "chat-66ca8": {
+      "hosting": {
+        "chat": [
+          ":",
+          "chat-66ca8-25df1",
+          "site"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

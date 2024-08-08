@@ -1,0 +1,63 @@
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #282c34;
+  color: white;
+}
+
+.messages {
+  padding: 20px;
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.message img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.message.sent {
+  justify-content: flex-end;
+}
+
+.message.received {
+  justify-content: flex-start;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+form input {
+  width: 80%;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #282c34;
+  color: white;
+  border-radius: 5px;
+}
