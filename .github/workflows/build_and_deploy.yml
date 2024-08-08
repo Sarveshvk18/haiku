@@ -11,12 +11,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4  # Updated to the latest version
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4  # Updated to the latest version
       with:
-        node-version: '16'
+        node-version: '20'  # You can set this to '16' or '20' as per your project requirements
 
     - name: Install dependencies
       run: npm install
@@ -26,3 +26,4 @@ jobs:
 
     - name: Deploy to Firebase Hosting
       run: firebase deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
+
